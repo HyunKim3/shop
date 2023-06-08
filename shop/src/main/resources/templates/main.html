@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/layout1}">
+<head>
+    <style>
+        .banner-container {
+            width: 100%;
+            position: relative;
+        }
+
+        .banner-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .banner-item {
+            width: 33.33%;
+            height: auto;
+            position: relative;
+        }
+
+        .banner-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .button a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+        }
+
+        .button a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+<div layout:fragment="content" style="margin:0; margin-left: 280px;">
+    <div class="banner-container">
+        <div class="banner-row">
+            <div class="banner-item">
+                <img src="/img/mainbanner1.jpg" alt="banner Image" style="width: 1096px;">
+            </div>
+        </div>
+        <div class="banner-row">
+            <div class="banner-item" style="height: 300px;">
+                <img src="/img/main_sec2.jpg" alt="banner Image">
+                <div class="button">
+                    <a href="/menu/coffee" class="btn">커피 주문하기</a>
+                </div>
+            </div>
+            <div class="banner-item" style="height: 300px;">
+                <img src="/img/main_sec3.jpg" alt="banner Image">
+                <div class="button">
+                    <a href="/menu/beverage" class="btn">음료 주문하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

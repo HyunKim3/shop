@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/layout1}">
+<!-- 사용자 CSS 추가 -->
+<th:block layout:fragment="css">
+  <head>
+    <style>
+        .footer {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          background-color: #f1f1f1;
+          width:100%
+        }
+
+        .social {
+          margin-right: 5px;
+          display: flex;
+        }
+
+        .footer-text {
+          margin-left: auto;
+        }
+
+        .prod {
+          margin-left: 10px;
+        }
+      </style>
+  </head>
+  <body>
+  <div class="footer" style="display:flex; flex-direction: column; padding-top: 30px; padding-bottom: 15px; border-top: .5px solid rgba(0, 0, 0, .1);" th:fragment="footer">
+    <div class="social" style="display:flex; padding-bottom: 10px; justify-content:center; align-items:center;">
+      <a href="https://www.facebook.com" style="padding: 0 3px 0;">
+        <img src="/img/facebook.jpg" alt="Facebook Icon" style="width: 30px; height: 30px;">
+      </a>
+      <a href="https://www.instagram.com" style="padding: 0 3px 0;">
+        <img src="/img/instagram.jpg" alt="Instagram Icon" style="width: 30px; height: 30px;">
+      </a>
+      <a href="https://www.naver.com" style="padding: 0 3px 0;">
+        <img src="/img/naver.jpg" alt="Naver Icon" style="width: 30px; height: 30px;">
+      </a>
+    </div>
+    <div class="footer-text" style="display:flex; justify-content: center; align-items: center; font-size: 7px; text-align: center;">
+      @Cafe Battery Web Site<br/>
+      📞010-5668-9494
+    </div>
+  </div>
+  </body>
+</th:block>
+</html>

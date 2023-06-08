@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+<!-- 사용자 CSS추가 -->
+<th:block layout:fragment="css">
+  <style>
+    .info-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .info-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .info-item {
+      margin-bottom: 5px;
+    }
+  </style>
+</th:block>
+
+<div layout:fragment="content">
+<div class="logo d-flex align-items-center">
+  <img src="/img/information.jpg" alt="information Image" style="max-width: 60px; max-height: 50px; margin-right: 3px;">
+  <h2 style="flex: 1; line-height: 20px;">Information</h2>
+</div>
+<div class="info-container">
+  <div class="info-title">고객센터 C/S Center</div>
+  <div class="info-item">전화: 02.3446.3775</div>
+  <div class="info-item">팩스: 02.3446.0000</div>
+  <div class="info-item">이메일: wadsijlk1233@gmail.com</div>
+  <div class="info-item">카카오톡 ID: wadsijlk</div>
+  <div class="info-item">오전 9시부터 오후 6시까지 상담가능합니다.</div>
+</div>
+
+<div class="info-container">
+  <div class="info-title">은행정보</div>
+  <div class="info-item">무통장 입금 계좌번호 (예금주: 김현)</div>
+  <div class="info-item">국민은행: 464801-01-061719</div>
+  <div class="info-item">우리은행: 1002-032-538269</div>
+  <div class="info-item">하나은행: 231-910094-22507</div>
+  <div class="info-item">농협: 084-12-135951</div>
+</div>
+
+<div class="info-container">
+  <div class="info-title">회사정보</div>
+  <div class="info-item">상호: Battery</div>
+  <div class="info-item">대표: 김현</div>
+  <div class="info-item">주소: 서울 양천구 목동동로 430, 13층</div>
+  <div class="info-item">개인정보관리 책임자: 김현 (wadsijlk@daum.net)</div>
+  <div class="info-item">사업자 등록번호: 211-06-76999</div>
+  <div class="info-item">통신판매업 신고: 제 양천-3381호</div>
+</div>
+
+<div class="info-container">
+  <div class="info-title">근무시간 정보</div>
+  <div class="info-item">근무시간: 월 ~ 금 AM 9:00 ~ PM 7:00</div>
+  <div class="info-item">점심시간: PM 12:00 ~ PM 1:00</div>
+  <div class="info-item">고객센터: AM 10:00 ~ PM 6:00</div>
+</div>
+</div>
+
+</html>
